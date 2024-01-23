@@ -1,0 +1,10 @@
+{
+  "name": "prettier-comment-test-plugin",
+  "version": "1.0.0",
+  "description": "Test repo to investigate comments pretty-printing in Prettier",
+  "main": "index.js",
+  "repository": "https://github.com/nene/prettier-comment-test-plugin",
+  "author": "Rene Saarsoo",
+  "license": "GPL-3.0-or-later",
+  "private": true
+}
