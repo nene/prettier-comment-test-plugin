@@ -2,11 +2,14 @@
   "name": "prettier-comment-test-plugin",
   "version": "1.0.0",
   "description": "Test repo to investigate comments pretty-printing in Prettier",
-  "main": "index.js",
+  "main": "index.mjs",
   "repository": "https://github.com/nene/prettier-comment-test-plugin",
   "author": "Rene Saarsoo",
   "license": "GPL-3.0-or-later",
   "private": true,
+  "scripts": {
+    "test": "prettier --plugin ./index.mjs --write test.sql"
+  },
   "dependencies": {
     "prettier": "^3.2.4",
     "sql-parser-cst": "^0.23.0"
