@@ -83,14 +83,12 @@ function printSql(path, options, print) {
     case "program":
       return path.map(print, "statements");
     case "drop_table_stmt":
-      return group(
-        fill(
-          join(line, [
-            path.call(print, "dropKw"),
-            path.call(print, "tableKw"),
-            path.call(print, "tables"),
-          ])
-        )
+      return fill(
+        join(line, [
+          path.call(print, "dropKw"),
+          path.call(print, "tableKw"),
+          path.call(print, "tables"),
+        ])
       );
     case "list_expr":
       return join(", ", path.map(print, "items"));
